@@ -19,7 +19,7 @@ function App() {
       id: new Date().getTime() + 2,
       component: <MyCalendarAndRemindersWidget />,
       area: "right-widget",
-      name: "Calendar",
+      name: "Calendar and Reminders",
     },
     {
       id: new Date().getTime() + 1,
