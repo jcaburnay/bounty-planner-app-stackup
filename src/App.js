@@ -5,6 +5,7 @@ import WidgetGalleryModal from "./modals/WidgetGalleryModal";
 import Draggable from "react-draggable";
 import TimerWidget from "./widgets/TimerWidget";
 import CalendarWidget from "./widgets/CalendarWidget";
+import WeatherWidget from "./widgets/WeatherWidget";
 
 function App() {
   const [widgets, setWidgets] = useState([
@@ -25,6 +26,12 @@ function App() {
       component: <TimerWidget />,
       area: "left-widget",
       name: "Timer",
+    },
+    {
+      id: new Date().getTime() + 3,
+      component: <WeatherWidget />,
+      area: "right-widget",
+      name: "Weather",
     },
   ]);
   const [showWidgetModal, setShowWidgetModal] = useState(false);
