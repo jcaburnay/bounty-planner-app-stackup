@@ -2,15 +2,17 @@ import React, { useEffect, useState } from "react";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import { TbTemperatureCelsius, TbTemperatureFahrenheit } from "react-icons/tb";
 import { RiExchangeBoxFill } from "react-icons/ri";
+import { FaRegSmileWink } from "react-icons/fa";
 import "../styles/styles.css";
 import countries from "../countries.json";
 
 const WEATHER_API_KEY = "b6422ce36f854eda9ae190853230507";
 const API_NINJAS_KEY = "qDytCWpkhD14ZCqzjGrawA==V38qVajZrn5CKkKo";
 
-export default function WeatherWidget() {
+export default function MyWeatherWidget() {
   const [unit, setUnit] = useState("celsius");
   const [coordinates, setCoordinates] = useState({});
+  const [isLocationEnabled, setIsLocationEnabled] = useState(false);
 
   const [weather, setWeather] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -60,13 +62,16 @@ export default function WeatherWidget() {
           const longitude = position.coords.longitude;
 
           setCoordinates({ latitude, longitude });
+          setIsLocationEnabled(true);
         },
         function (error) {
           console.log("Error: " + error.message);
+          setIsLocationEnabled(false);
         }
       );
     } else {
       console.log("Geolocation is not supported by this browser.");
+      setIsLocationEnabled(false);
     }
   }, []);
 
@@ -118,6 +123,17 @@ export default function WeatherWidget() {
       })();
     }
   }, [quotes.length]);
+
+  if (!isLocationEnabled) {
+    return (
+      <div>
+        <p style={{ maxWidth: 350 }}>
+          We might need you to enable location access for this widget to work
+          properly <FaRegSmileWink style={{ display: "inline" }} />
+        </p>
+      </div>
+    );
+  }
 
   if (loading) {
     return <div style={{ minWidth: 350 }}>Loading widget content...</div>;

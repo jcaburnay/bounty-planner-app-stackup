@@ -4,8 +4,8 @@ import ClockWidget from "./widgets/ClockWidget";
 import WidgetGalleryModal from "./modals/WidgetGalleryModal";
 import Draggable from "react-draggable";
 import TimerWidget from "./widgets/TimerWidget";
-import CalendarWidget from "./widgets/CalendarWidget";
-import WeatherWidget from "./widgets/WeatherWidget";
+import MyWeatherWidget from "./widgets/MyWeatherWidget";
+import MyCalendarAndRemindersWidget from "./widgets/MyCalendarAndRemindersWidget";
 
 function App() {
   const [widgets, setWidgets] = useState([
@@ -17,7 +17,7 @@ function App() {
     },
     {
       id: new Date().getTime() + 2,
-      component: <CalendarWidget />,
+      component: <MyCalendarAndRemindersWidget />,
       area: "right-widget",
       name: "Calendar",
     },
@@ -29,7 +29,7 @@ function App() {
     },
     {
       id: new Date().getTime() + 3,
-      component: <WeatherWidget />,
+      component: <MyWeatherWidget />,
       area: "right-widget",
       name: "Weather",
     },

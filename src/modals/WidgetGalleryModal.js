@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import ClockWidget from "../widgets/ClockWidget";
-import ReminderListWidget from "../widgets/ReminderListWidget";
 import TimerWidget from "../widgets/TimerWidget";
-import CalendarWidget from "../widgets/CalendarWidget";
-import WeatherWidget from "../widgets/WeatherWidget";
+import MyCalendarAndRemindersWidget from "../widgets/MyCalendarAndRemindersWidget";
+import MyWeatherWidget from "../widgets/MyWeatherWidget";
 
 export default function WidgetGalleryModal({
   setShowWidgetModal,
@@ -13,10 +12,12 @@ export default function WidgetGalleryModal({
 }) {
   const [galleryWidgets, setGalleryWidgets] = useState([
     { component: <ClockWidget />, name: "Date and Time" },
-    { component: <ReminderListWidget />, name: "Reminder List" },
     { component: <TimerWidget />, name: "Timer" },
-    { component: <CalendarWidget />, name: "Calendar" },
-    { component: <WeatherWidget />, name: "Weather" },
+    {
+      component: <MyCalendarAndRemindersWidget />,
+      name: "Calendar and Reminders",
+    },
+    { component: <MyWeatherWidget />, name: "Weather" },
   ]);
   return (
     <div

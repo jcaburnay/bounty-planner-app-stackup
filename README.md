@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# Planner App – Your Custom Widget (Bounty)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About This Bounty
 
-## Available Scripts
+In the Planner App quest of the Web Development with React II campaign, released on the same day as this bounty, you created a planner app with several widgets.
 
-In the project directory, you can run:
+In this bounty, you will be required to create your own custom widget. If you are not able to think of one, here is a list of ideas you can use for your custom widget:
 
-### `npm start`
+* Weather Widget
+* Location Widget
+* Stopwatch Widget
+* game, e.g.tic tac toe
+* Photo Widget
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You will also be required to have a write-up of at least 100 words describing why you think your custom-made widget is an appropriate widget to have in the planner app, and also how to use it. The write-up can be either a PDF or Markdown file. You should ensure that the file can be accessed by our reviewer.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Acceptance Criteria
 
-### `npm test`
+Submissions will be judged based on the following criteria:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Appropriateness of the widget: Does the custom widget built fit in with the rest of the widgets of the planner app?
+1. Comprehensiveness of the write-up: Does the write-up clearly explain why the widget was built and how it works?
+1. Code Quality: Does the code follow the best coding practices and is easy for other developments to understand?
